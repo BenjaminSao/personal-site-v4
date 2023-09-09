@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+$black: #222425;
+$grey: #3b4043;
+$white: #f5f5f5;
+
+@font-face {
+  font-family: "fungis";
+  src: url("../assets/fonts/FUNGIS/FUNGIS-Regular\ 400.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "fungis";
+  font-weight: bold;
+  src: url("../assets/fonts/FUNGIS/FUNGIS-Bold\ 700.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "fungis";
+  font-weight: bolder;
+  src: url("../assets/fonts/FUNGIS/FUNGIS-Heavy\ 700.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "rota";
+  src: url("../assets/fonts/rota/Rota-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "rota";
+  font-weight: bold;
+  src: url("../assets/fonts/rota/Rota-Bold.otf") format("opentype");
+}
+
+h1 {
+  font-family: "fungis";
+}
+
+h2 {
+  font-family: "fungis";
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+}
+
+.descriptionText {
+  font-family: "fungis";
+  font-weight: bold;
+  letter-spacing: 3.6px;
+  font-size: 12px;
+}
+
+p {
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+body {
+  margin: 0;
+  background-color: $black;
+  color: $white;
+  font-family: "rota", Arial, Helvetica, sans-serif;
+}

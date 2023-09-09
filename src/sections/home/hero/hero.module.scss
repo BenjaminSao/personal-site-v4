@@ -1,0 +1,58 @@
+.heroSectionContainer {
+  border: 1px #3b4043 solid;
+
+  .leftContainer {
+    width: 850px;
+
+    .nameContainer {
+      background-color: #f5f5f5;
+      padding: 5rem 3rem;
+      color: #3b4043;
+
+      .title {
+        font-size: 75px;
+        line-height: normal;
+        font-weight: 700;
+      }
+    }
+
+    .descriptionContainer {
+      background-color: #3b4043;
+      padding: 3rem;
+    }
+
+    .updateContainer {
+      background-color: #3b4043;
+      padding: 3rem;
+    }
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 36rem;
+
+    background: url("/images/IMG_2440.JPG");
+    background-position: center center;
+    background-size: cover;
+
+    filter: contrast(75%);
+
+    padding: 2rem;
+
+    .circle {
+      width: 0.75rem;
+      height: 0.75rem;
+      background-color: #f5f5f5;
+      border-radius: 50%;
+    }
+
+    .circle:hover {
+      background-color: #222425;
+    }
+  }
+
+  .socialsContainer {
+    background-color: #3b4043;
+    padding: 3rem;
+  }
+}
