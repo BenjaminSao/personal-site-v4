@@ -4,8 +4,8 @@ const { largeContainer, smallContainer, content } = styles;
 
 export default function Experiences() {
   return (
-    <section className="section">
-      <div className="container mx-auto mt-24">
+    <section className="section mt-32">
+      <div className="container mx-auto">
         <h2>MY EXPERIENCES</h2>
 
         <div className="grid grid-cols-4 gap-4 mt-6">
