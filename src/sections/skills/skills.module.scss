@@ -1,33 +1,34 @@
 .skillsContainer {
-
     height: 25rem;
     overflow-y: scroll;
     padding-right: 1px;
-    
+
     .skillContainer {
         padding: 2rem 3rem;
         min-height: 10rem;
-        outline: #3B4043 1px solid;
-        
+        outline: #3b4043 1px solid;
+
         margin-top: 1px;
         margin-left: 1px;
         position: relative;
 
         .skillNumber {
-            color: #3B4043;
-            font-weight: bolder;
-            font-size: 100px;
-            line-height: 0;
             width: 8rem;
 
-            text-align: right;
-            letter-spacing: normal;
-
             position: absolute;
-            bottom: 30px;
+            bottom: 20px;
             right: 20px;
 
             padding-bottom: 1.5rem;
+
+            > h1 {
+                color: #3b4043;
+                font-weight: bolder;
+                font-size: 100px;
+                line-height: 0;
+                text-align: right;
+                letter-spacing: normal;
+            }
         }
     }
 }

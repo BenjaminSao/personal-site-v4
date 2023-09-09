@@ -9,7 +9,6 @@ const {
   title,
   leftContainer,
   imageContainer,
-  circle,
   socialsContainer,
 } = styles;
 
@@ -54,9 +53,9 @@ export default function Hero() {
               >
                 <p className="descriptionText">ME</p>
                 <div className={`flex gap-2`}>
-                  <div className={`${circle}`}></div>
-                  <div className={`${circle}`}></div>
-                  <div className={`${circle}`}></div>
+                  <div className="circle"></div>
+                  <div className="circle"></div>
+                  <div className="circle"></div>
                 </div>
               </div>
               <div className={`${socialsContainer} mt-32`}>

@@ -1,5 +1,5 @@
-import Experiences from "@/sections/experiences/experiences";
-import Gallery from "@/sections/gallery/gallery";
+import Experiences from "@/sections/home/experiences/experiences";
+import Gallery from "@/sections/home/gallery/gallery";
 import Hero from "@/sections/home/hero/hero";
 import Navbar from "@/sections/home/navbar/navbar";
 import Skills from "@/sections/skills/skills";
