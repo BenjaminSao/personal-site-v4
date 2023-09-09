@@ -1,4 +1,5 @@
 import Experiences from "@/sections/home/experiences/experiences";
+import Footer from "@/sections/home/footer/footer";
 import Gallery from "@/sections/home/gallery/gallery";
 import Hero from "@/sections/home/hero/hero";
 import Navbar from "@/sections/home/navbar/navbar";
@@ -12,6 +13,7 @@ export default function Home() {
       <Experiences></Experiences>
       <Skills></Skills>
       <Gallery></Gallery>
+      <Footer></Footer>
     </div>
   );
 }

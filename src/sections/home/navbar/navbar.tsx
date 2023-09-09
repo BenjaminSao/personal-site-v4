@@ -5,7 +5,7 @@ const { logoText, navbarItemsContainer, navbarItem, isSelected } = styles;
 export default function Navbar() {
   return (
     <section className="section">
-      <div className="container mx-auto px-8 py-4 w-full">
+      <div className="container mx-auto pl-8 py-4 w-full">
         <div className="flex">
           <div className="flex items-center">
             <h1>/</h1>
