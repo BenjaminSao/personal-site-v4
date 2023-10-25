@@ -1,13 +1,20 @@
 import styles from "./gallery.module.scss";
 
-const { imageGalleryContainer, galleryTitle } = styles;
+const { imageGalleryContainer, galleryTitle, galleryImage, overlay } = styles;
 
 export default function Gallery() {
   return (
-    <section className="section mt-32">
+    <section className="section mt-48">
       <div className="container mx-auto">
         <div className={`${imageGalleryContainer}`}>
           <h2>GALLERY</h2>
+
+          <img
+            className={`${galleryImage}`}
+            src="/images/IMG_3230.png"
+            alt=""
+          />
+          <div className={`${overlay}`}></div>
 
           <div className="grid grid-cols-3 h-full">
             <div className="col-span-2 flex flex-col justify-between">

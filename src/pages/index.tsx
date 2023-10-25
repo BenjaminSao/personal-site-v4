@@ -3,7 +3,9 @@ import Footer from "@/sections/home/footer/footer";
 import Gallery from "@/sections/home/gallery/gallery";
 import Hero from "@/sections/home/hero/hero";
 import Navbar from "@/sections/home/navbar/navbar";
-import Skills from "@/sections/skills/skills";
+import Skills from "@/sections/home/skills/skills";
+import Contact from "@/sections/home/contact/contact";
+import Updates from "@/sections/home/updates/updates";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <Experiences></Experiences>
       <Skills></Skills>
       <Gallery></Gallery>
+      <Updates></Updates>
+      <Contact></Contact>
       <Footer></Footer>
     </div>
   );

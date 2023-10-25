@@ -35,9 +35,15 @@
     background-position: center center;
     background-size: cover;
 
-    filter: contrast(75%);
+    filter: contrast(80%);
+
+    transition: filter 0.3s;
 
     padding: 2rem;
+  }
+
+  .imageContainer:hover {
+    filter: contrast(100%);
   }
 
   .socialsContainer {

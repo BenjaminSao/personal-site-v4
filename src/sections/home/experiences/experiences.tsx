@@ -4,7 +4,7 @@ const { largeContainer, smallContainer, content } = styles;
 
 export default function Experiences() {
   return (
-    <section className="section mt-32">
+    <section className="section mt-48">
       <div className="container mx-auto">
         <h2>MY EXPERIENCES</h2>
 

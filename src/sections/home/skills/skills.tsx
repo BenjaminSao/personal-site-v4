@@ -1,12 +1,11 @@
 import styles from "./skills.module.scss";
 import Image from "next/image";
 
-const { skillsContainer, skillContainer, skillNumber, scrollContainer } =
-  styles;
+const { skillsContainer, skillContainer, skillNumber } = styles;
 
 export default function Skills() {
   return (
-    <section className="section mt-32">
+    <section className="section mt-48">
       <div className="container mx-auto">
         <h2>
           <span className="font-extrabold">FEATURED</span> SKILLS

@@ -1,5 +1,7 @@
 import styles from "./hero.module.scss";
 
+import FeatherIcon from "feather-icons-react";
+
 const {
   heroSectionContainer,
   nameContainer,
@@ -58,9 +60,26 @@ export default function Hero() {
                   <div className="circle"></div>
                 </div>
               </div>
-              <div className={`${socialsContainer} mt-32`}>
+              <div className={`${socialsContainer} mt-4`}>
                 <p className="descriptionText">CONNECT</p>
-                <div className="m-12"></div>
+
+                <div className="flex items-center gap-8 mt-4">
+                  <a href="">
+                    <FeatherIcon icon="linkedin" size={30}></FeatherIcon>
+                  </a>
+                  <a href="">
+                    <FeatherIcon icon="github" size={30}></FeatherIcon>
+                  </a>
+                  <a href="">
+                    <FeatherIcon icon="instagram" size={30}></FeatherIcon>
+                  </a>
+                  <a href="">
+                    <FeatherIcon icon="facebook" size={30}></FeatherIcon>
+                  </a>
+                  <a href="">
+                    <FeatherIcon icon="search" size={30}></FeatherIcon>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

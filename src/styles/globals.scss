@@ -25,7 +25,7 @@ $white: #f5f5f5;
 
 @font-face {
   font-family: "rota";
-  src: url("../assets/fonts/rota/Rota-Regular.otf") format("opentype");
+  src: url("../assets/fonts/rota/Rota-Light.otf") format("opentype");
 }
 
 @font-face {
@@ -76,4 +76,97 @@ body {
 
 .circle:hover {
   background-color: #222425;
+}
+
+.feather {
+  stroke: #f5f5f5;
+  stroke-width: 1.5px;
+
+  transition: stroke 0.2s;
+}
+
+a .feather:hover {
+  stroke: #3b4043;
+}
+
+a {
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.inputContainer {
+  position: relative;
+
+  > .input,
+  > .textarea {
+    width: 100%;
+    padding: 0.75rem 1.5rem 0.5rem 1.5rem;
+    background-color: transparent;
+    border: #3b4043 solid 1px;
+
+    font-size: 1.5rem;
+    font-family: rota;
+    letter-spacing: 1.5px;
+
+    resize: none;
+    vertical-align: top;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  > .inputLabel {
+    font-size: 0.75rem;
+    font-family: "fungis";
+    letter-spacing: 3.6px;
+
+    position: absolute;
+    bottom: -0.75rem;
+    left: 2rem;
+  }
+}
+
+textarea::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.button {
+  padding: 1rem 2rem;
+  border: #3b4043 solid 1px;
+
+  font-size: 0.75rem;
+  font-family: "fungis";
+  letter-spacing: 3.6px;
+
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: $grey;
+  }
+}
+
+.updatesContainer {
+  position: relative;
+
+  .updateContainer {
+    background-color: #3b4043;
+
+    .updateTitle {
+      font-family: rota;
+      font-weight: bold;
+      font-size: 1.75rem;
+    }
+  }
+
+  > .sectionTitle {
+    position: absolute;
+    top: -1.5rem;
+    left: 1.5rem;
+  }
 }
