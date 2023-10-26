@@ -61,6 +61,7 @@ p {
 }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   background-color: $black;
   color: $white;
@@ -151,22 +152,59 @@ textarea::-webkit-scrollbar {
   }
 }
 
-.updatesContainer {
-  position: relative;
+.projects {
+  height: 60rem;
+  width: 100vw;
+  overflow-x: scroll;
+  padding: 2px;
 
-  .updateContainer {
-    background-color: #3b4043;
-
-    .updateTitle {
-      font-family: rota;
-      font-weight: bold;
-      font-size: 1.75rem;
-    }
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
   }
 
-  > .sectionTitle {
-    position: absolute;
-    top: -1.5rem;
-    left: 1.5rem;
+  .project {
+    height: 100%;
+    width: 20rem;
+    position: relative;
+    flex-shrink: 0;
+
+    outline: #3b4043 1px solid;
+
+    margin-top: 1px;
+    margin-left: 1px;
+
+    > .projectImageOverlay {
+      height: 85%;
+      width: 100%;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      background: rgba(0, 0, 0, 0.75);
+
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: 0.2;
+      }
+    }
+
+    > .projectImage {
+      height: 85%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .projectsSection {
+    align-items: center;
+  }
+
+  .projects {
+    width: 120rem;
   }
 }

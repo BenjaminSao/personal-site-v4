@@ -6,6 +6,7 @@ import Navbar from "@/sections/home/navbar/navbar";
 import Skills from "@/sections/home/skills/skills";
 import Contact from "@/sections/home/contact/contact";
 import Updates from "@/sections/home/updates/updates";
+import Projects from "@/sections/home/projects/projects";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Experiences></Experiences>
       <Skills></Skills>
       <Gallery></Gallery>
+      <Projects></Projects>
       <Updates></Updates>
       <Contact></Contact>
       <Footer></Footer>
