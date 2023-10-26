@@ -9,7 +9,7 @@ export default function Updates() {
         <div className={`${updatesContainer} flex flex-col items-center`}>
           <h2 className={`${sectionTitle}`}>UPDATES</h2>
 
-          <div className="grid grid-cols-2 gap-2 pb-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pb-4">
             <div
               className={`py-16 px-12 ${updateContainer} flex flex-col justify-between`}
             >

@@ -6,11 +6,11 @@ export default function Experiences() {
   return (
     <section className="section mt-48">
       <div className="container mx-auto">
-        <h2>MY EXPERIENCES</h2>
+        <h2 className="pl-4">MY EXPERIENCES</h2>
 
-        <div className="grid grid-cols-4 gap-4 mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
           <div
-            className={`${largeContainer} col-span-2 flex flex-col justify-between`}
+            className={`${largeContainer} md:col-span-2 flex flex-col justify-between`}
           >
             <p className="descriptionText">WORK</p>
 
@@ -55,7 +55,7 @@ export default function Experiences() {
             </div>
           </div>
           <div
-            className={`${largeContainer} col-span-2 flex flex-col justify-between`}
+            className={`${largeContainer} md:col-span-2 flex flex-col justify-between`}
           >
             <p className="descriptionText">WORK</p>
 

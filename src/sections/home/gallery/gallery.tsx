@@ -25,7 +25,7 @@ export default function Gallery() {
               </div>
 
               <div className="grid grid-cols-3">
-                <p className="col-span-2">
+                <p className="col-span-3 lg:col-span-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Elementum sagittis vitae et leo duis ut diam quam.

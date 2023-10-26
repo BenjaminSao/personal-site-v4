@@ -1,18 +1,17 @@
 .contactContainer {
   position: relative;
   border: #3b4043 solid 1px;
-  margin: 0 4rem;
+  margin: 0 1rem;
 
   .contactSubSection {
-    padding: 4rem;
+    padding: 4rem 2rem;
     position: relative;
 
-    &.info {
-      border-right: #3b4043 solid 1px;
+    &.social {
+      border-top: #3b4043 solid 1px;
     }
 
-    &.social {
-      border-right: #3b4043 solid 1px;
+    &.email {
       border-top: #3b4043 solid 1px;
     }
   }
@@ -33,5 +32,26 @@
     position: absolute;
     top: -1.5rem;
     left: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .contactContainer {
+    margin: 0 4rem !important;
+  }
+
+  .contactSubSection {
+    padding: 3.5rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .info {
+    border-right: #3b4043 solid 1px !important;
+  }
+
+  .social {
+    border-right: #3b4043 solid 1px !important;
+    border-top: #3b4043 solid 1px !important;
   }
 }

@@ -5,7 +5,7 @@ const { footerSection, versionText } = styles;
 export default function Footer() {
   return (
     <section className={`${footerSection} section mt-48`}>
-      <div className="container mx-auto py-12">
+      <div className="container mx-auto py-12 px-8">
         <div className="inline">
           <p>
             DESIGNED & CODED BY{" "}

@@ -1,6 +1,4 @@
 .skillsContainer {
-  height: 25rem;
-  overflow-y: scroll;
   padding-right: 1px;
 
   .skillContainer {
@@ -10,6 +8,8 @@
 
     margin-top: 1px;
     margin-left: 1px;
+
+    margin: 1px 1rem 0 1rem;
     position: relative;
 
     .skillNumber {
@@ -33,6 +33,8 @@
   }
 }
 
-.skillsContainer::-webkit-scrollbar {
-  display: none;
+@media (min-width: 768px) {
+  .skillContainer {
+    margin: 1px 0 0 1px !important;
+  }
 }

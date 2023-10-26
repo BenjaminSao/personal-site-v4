@@ -19,8 +19,8 @@ export default function Hero() {
     <section className="section">
       <div className="container mx-auto">
         <div className={`${heroSectionContainer} p-4`}>
-          <div className="flex gap-4">
-            <div className="flex items-end">
+          <div className="flex flex-col lg:flex-row gap-4">
+            <div className="flex md:items-end">
               <div className={`${leftContainer} flex flex-col gap-4`}>
                 <div className={`${nameContainer}`}>
                   <p className="descriptionText">INTRODUCTION</p>

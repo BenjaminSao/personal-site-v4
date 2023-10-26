@@ -1,6 +1,6 @@
 .imageGalleryContainer {
   position: relative;
-  padding: 6rem 6rem 3rem 6rem;
+  padding: 4rem 4rem 3rem 4rem;
 
   width: 100%;
   height: 70rem;
@@ -13,8 +13,8 @@
   }
 
   .galleryTitle {
-    font-size: 100px;
-    letter-spacing: 24px;
+    font-size: 25px;
+    letter-spacing: 10px;
     font-weight: 800;
   }
 
@@ -51,5 +51,17 @@
 .imageGalleryContainer:hover {
   .overlay {
     opacity: 0.5;
+  }
+}
+
+@media (min-width: 1024px) {
+  .imageGalleryContainer {
+    padding: 6rem 6rem 3rem 6rem !important;
+  }
+
+  .galleryTitle {
+    font-size: 100px !important;
+    letter-spacing: 24px !important;
+    font-weight: 800 !important;
   }
 }

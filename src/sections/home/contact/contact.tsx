@@ -6,9 +6,9 @@ const {
   contactSectionTitle,
   contactContainerTitle,
   contactSubSection,
-  socialSection,
   info,
   social,
+  email,
 } = styles;
 
 export default function Contact() {
@@ -18,10 +18,10 @@ export default function Contact() {
         <div className={`${contactContainer}`}>
           <h2 className={`${contactContainerTitle}`}>CONTACT</h2>
 
-          <div className="grid grid-cols-3">
-            <div>
-              <div className={`${contactSubSection}  ${info}`}>
-                <div className="pb-32">
+          <div className="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-5">
+            <div className="col-span-2">
+              <div className={`${contactSubSection} ${info}`}>
+                <div className="pb-20 pt-10">
                   <div className="flex pb-2">
                     <FeatherIcon icon="mail"></FeatherIcon>
                     <a className="pt-1 pl-4">ben.saobuppha@mail.utoronto.ca</a>
@@ -34,7 +34,7 @@ export default function Contact() {
                 <h1 className={`${contactSectionTitle}`}>INFO</h1>
               </div>
               <div className={`${contactSubSection} ${social}`}>
-                <div className="pb-12">
+                <div className="pb-20 pt-10">
                   <div className="flex items-center justify-between">
                     <a href="">
                       <FeatherIcon icon="linkedin" size={30}></FeatherIcon>
@@ -57,8 +57,8 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="col-span-2">
-              <div className={`${contactSubSection} h-full`}>
+            <div className="col-span-2 xl:col-span-3">
+              <div className={`${contactSubSection} ${email} h-full`}>
                 <div className="inputContainer mb-8">
                   <input className="input" type="text" />
                   <label className="inputLabel">SUBJECT</label>
