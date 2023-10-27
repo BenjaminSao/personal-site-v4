@@ -15,57 +15,68 @@ export default function Projects() {
           image="/images/Thumnail.png"
           name="TALESPIN"
           tagline="AI Generated Children Stories"
+          id={1}
         ></ProjectCard>
 
         <ProjectCard
           name="TALESPIN"
           tagline="AI Generated Children Stories"
+          id={2}
         ></ProjectCard>
 
         <ProjectCard
           name="TALESPIN"
           tagline="AI Generated Children Stories"
+          id={3}
         ></ProjectCard>
 
         <ProjectCard
           name="TALESPIN"
           tagline="AI Generated Children Stories"
+          id={4}
         ></ProjectCard>
 
         <ProjectCard
           name="TALESPIN"
           tagline="AI Generated Children Stories"
+          id={5}
         ></ProjectCard>
 
         <ProjectCard
           name="TALESPIN"
           tagline="AI Generated Children Stories"
+          id={6}
         ></ProjectCard>
 
         <ProjectCard
           name="TALESPIN"
           tagline="AI Generated Children Stories"
+          id={7}
         ></ProjectCard>
 
         <ProjectCard
           name="TALESPIN"
           tagline="AI Generated Children Stories"
+          id={8}
         ></ProjectCard>
 
         <ProjectCard
           name="TALESPIN"
           tagline="AI Generated Children Stories"
+          id={9}
         ></ProjectCard>
 
         <ProjectCard
           name="TALESPIN"
           tagline="AI Generated Children Stories"
+          id={10}
         ></ProjectCard>
 
         <ProjectCard
           image="/images/Thumnail.png"
           name="TALESPIN"
           tagline="AI Generated Children Stories"
+          id={11}
         ></ProjectCard>
       </div>
     </section>

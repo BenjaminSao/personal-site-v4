@@ -15,7 +15,7 @@ export default function Contact() {
   return (
     <section className="section mt-48">
       <div className="container mx-auto">
-        <div className={`${contactContainer}`}>
+        <div className={`${contactContainer}`} data-aos="zoom-in">
           <h2 className={`${contactContainerTitle}`}>CONTACT</h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-5">
@@ -59,17 +59,46 @@ export default function Contact() {
 
             <div className="col-span-2 xl:col-span-3">
               <div className={`${contactSubSection} ${email} h-full`}>
-                <div className="inputContainer mb-8">
+                <div className="grid grid-cols-2 gap-4 mb-8">
+                  <div
+                    className="inputContainer"
+                    data-aos="fade-up"
+                    data-aos-delay="150"
+                  >
+                    <input className="input" type="text" />
+                    <label className="inputLabel">NAME</label>
+                  </div>
+                  <div
+                    className="inputContainer"
+                    data-aos="fade-up"
+                    data-aos-delay="150"
+                  >
+                    <input className="input" type="text" />
+                    <label className="inputLabel">EMAIL</label>
+                  </div>
+                </div>
+
+                <div className="inputContainer mb-8" data-aos="fade-up">
                   <input className="input" type="text" />
                   <label className="inputLabel">SUBJECT</label>
                 </div>
 
-                <div className="inputContainer mb-8">
-                  <textarea className="textarea" rows={8} />
+                <div
+                  className="inputContainer mb-8"
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                >
+                  <textarea className="textarea" rows={5} />
                   <label className="inputLabel">BODY</label>
                 </div>
 
-                <button className="button">SEND</button>
+                <button
+                  className="button"
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                >
+                  SEND
+                </button>
 
                 <h1 className={`${contactSectionTitle}`}>EMAIL</h1>
               </div>

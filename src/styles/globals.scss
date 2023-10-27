@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "aos/dist/aos.css";
 
 $black: #222425;
 $grey: #3b4043;

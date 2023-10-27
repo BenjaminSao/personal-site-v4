@@ -10,6 +10,7 @@ const {
 } = styles;
 
 export interface ExperienceCardProps {
+  id: number;
   cardSize: cardSize;
   category: string;
   description?: string;
@@ -26,29 +27,33 @@ export enum cardSize {
 export default function experienceCard(props: ExperienceCardProps) {
   return (
     <div
-      className={`${
-        props.cardSize === cardSize.L
-          ? largeContainer + " md:col-span-2"
-          : smallContainer
-      } flex flex-col justify-between`}
+      data-aos="zoom-in"
+      data-aos-delay={props.id * 25}
+      className={`${props.cardSize === cardSize.L && " md:col-span-2"}`}
     >
-      <div>
-        <p className={`${beforeExpTitle} descriptionText`}>
-          {props.category.toUpperCase()}
-        </p>
-        <p className={`${afterExpTitle} descriptionText`}>MY EXPERIENCE</p>
+      <div
+        className={`${
+          props.cardSize === cardSize.L ? largeContainer : smallContainer
+        } flex flex-col justify-between h-full`}
+      >
+        <div>
+          <p className={`${beforeExpTitle} descriptionText`}>
+            {props.category.toUpperCase()}
+          </p>
+          <p className={`${afterExpTitle} descriptionText`}>MY EXPERIENCE</p>
 
-        <p className={`${afterExpDescription} py-4`}>
-          {props.description ? props.description : ""}
-        </p>
-      </div>
+          <p className={`${afterExpDescription} py-4`}>
+            {props.description ? props.description : ""}
+          </p>
+        </div>
 
-      <div className={`${content}`}>
-        <p className="descriptionText">{props.role.toUpperCase()}</p>
-        <p className="font-bold text-3xl mt-1">
-          {props.location.toUpperCase()}
-        </p>
-        <p className="text-sm">{props.duration}</p>
+        <div>
+          <p className="descriptionText">{props.role.toUpperCase()}</p>
+          <p className="font-bold text-3xl mt-1">
+            {props.location.toUpperCase()}
+          </p>
+          <p className="text-sm">{props.duration}</p>
+        </div>
       </div>
     </div>
   );

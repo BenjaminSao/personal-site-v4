@@ -5,6 +5,7 @@ import Image from "next/image";
 const { project, projectImage, projectImageOverlay } = styles;
 
 export interface ProjectCardProps {
+  id: number;
   image?: string;
   name: string;
   tagline: string;
@@ -12,7 +13,11 @@ export interface ProjectCardProps {
 
 export default function ProjectCard(props: ProjectCardProps) {
   return (
-    <div className={`${project}`}>
+    <div
+      className={`${project}`}
+      data-aos="fade-up"
+      data-aos-delay={50 * props.id}
+    >
       {props.image ? (
         <Image
           width={4320}

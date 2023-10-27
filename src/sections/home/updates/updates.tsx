@@ -12,12 +12,14 @@ export default function Updates() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pb-4">
             <UpdateCard
+              id={1}
               title="HACKCON"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                             do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               date="05/09/2023"
             ></UpdateCard>
             <UpdateCard
+              id={2}
               title="JAPAN TRIP!"
               description="Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit, sed do eiusmod tempor

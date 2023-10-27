@@ -8,7 +8,14 @@ import Contact from "@/sections/home/contact/contact";
 import Updates from "@/sections/home/updates/updates";
 import Projects from "@/sections/home/projects/projects";
 
+import AOS from "aos";
+import { useEffect } from "react";
+
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div>
       <Navbar></Navbar>

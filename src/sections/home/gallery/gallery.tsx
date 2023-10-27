@@ -8,7 +8,7 @@ export default function Gallery() {
   return (
     <section className="section mt-48">
       <div className="container mx-auto">
-        <div className={`${imageGalleryContainer}`}>
+        <div className={`${imageGalleryContainer}`} data-aos="fade-up">
           <h2>GALLERY</h2>
 
           <Image

@@ -8,6 +8,7 @@ export default function Experiences() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mt-6 mx-4 xl:mx-0">
           <ExperienceCard
+            id={1}
             cardSize={cardSize.L}
             category={"WORK"}
             description={`NetSuite - ERP Cash Management Team • Pioneered
@@ -24,6 +25,7 @@ export default function Experiences() {
             duration="2022 (4 Months)"
           ></ExperienceCard>
           <ExperienceCard
+            id={2}
             cardSize={cardSize.S}
             category={"WORK"}
             description={`NetSuite - ERP Cash Management Team • Pioneered
@@ -40,6 +42,7 @@ export default function Experiences() {
             duration="2022 (4 Months)"
           ></ExperienceCard>
           <ExperienceCard
+            id={3}
             cardSize={cardSize.S}
             category={"WORK"}
             description={`NetSuite - ERP Cash Management Team • Pioneered
@@ -56,6 +59,7 @@ export default function Experiences() {
             duration="2022 (4 Months)"
           ></ExperienceCard>
           <ExperienceCard
+            id={4}
             cardSize={cardSize.S}
             category={"WORK"}
             description={`NetSuite - ERP Cash Management Team • Pioneered
@@ -72,6 +76,7 @@ export default function Experiences() {
             duration="2022 (4 Months)"
           ></ExperienceCard>
           <ExperienceCard
+            id={5}
             cardSize={cardSize.L}
             category={"WORK"}
             description={`NetSuite - ERP Cash Management Team • Pioneered

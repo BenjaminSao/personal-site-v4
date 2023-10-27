@@ -22,7 +22,7 @@ export default function Hero() {
           <div className="flex flex-col lg:flex-row gap-4">
             <div className="flex md:items-end">
               <div className={`${leftContainer} flex flex-col gap-4`}>
-                <div className={`${nameContainer}`}>
+                <div className={`${nameContainer}`} data-aos="fade-up">
                   <p className="descriptionText">INTRODUCTION</p>
 
                   <div className="mt-4">
@@ -30,7 +30,11 @@ export default function Hero() {
                     <h1 className={`${title}`}>Benjamin Saobuppha.</h1>
                   </div>
                 </div>
-                <div className={`${descriptionContainer}`}>
+                <div
+                  className={`${descriptionContainer}`}
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                >
                   <p className="descriptionText">DESCRIPTION</p>
                   <p className="mt-4">
                     I'm a Full-Stack Developer, who is a 4th year student
@@ -39,7 +43,11 @@ export default function Hero() {
                     Oracle and Vice President at HTV Exec Team.
                   </p>
                 </div>
-                <div className={`${updateContainer}`}>
+                <div
+                  className={`${updateContainer}`}
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
                   <p className="descriptionText">RECENT UPDATE</p>
                   <p className="mt-4">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -50,17 +58,23 @@ export default function Hero() {
               </div>
             </div>
             <div className="w-full">
-              <div
-                className={`${imageContainer} flex items-end justify-between`}
-              >
-                <p className="descriptionText">ME</p>
-                <div className={`flex gap-2`}>
-                  <div className="circle"></div>
-                  <div className="circle"></div>
-                  <div className="circle"></div>
+              <div data-aos="fade-up" data-aos-delay="150">
+                <div
+                  className={`${imageContainer} flex items-end justify-between`}
+                >
+                  <p className="descriptionText">ME</p>
+                  <div className={`flex gap-2`}>
+                    <div className="circle"></div>
+                    <div className="circle"></div>
+                    <div className="circle"></div>
+                  </div>
                 </div>
               </div>
-              <div className={`${socialsContainer} mt-4`}>
+              <div
+                className={`${socialsContainer} mt-4`}
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <p className="descriptionText">CONNECT</p>
 
                 <div className="flex items-center gap-8 mt-4">
