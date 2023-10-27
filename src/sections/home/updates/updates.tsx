@@ -1,6 +1,7 @@
+import UpdateCard from "./components/updateCard";
 import styles from "./updates.module.scss";
 
-const { updatesContainer, updateContainer, updateTitle, sectionTitle } = styles;
+const { updatesContainer, sectionTitle } = styles;
 
 export default function Updates() {
   return (
@@ -10,34 +11,21 @@ export default function Updates() {
           <h2 className={`${sectionTitle}`}>UPDATES</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pb-4">
-            <div
-              className={`py-16 px-12 ${updateContainer} flex flex-col justify-between`}
-            >
-              <div className="pb-16">
-                <h3 className={`${updateTitle} pb-2`}>HACKCON</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-
-              <p className="descriptionText">05/09/2023</p>
-            </div>
-            <div
-              className={`py-16 px-12 ${updateContainer} flex flex-col justify-between`}
-            >
-              <div className="pb-16">
-                <h3 className={`${updateTitle} pb-2`}>JAPAN TRIP!</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Tincidunt id aliquet risus feugiat in. Velit dignissim sodales
-                  ut eu.
-                </p>
-              </div>
-
-              <p className="descriptionText">05/09/2023</p>
-            </div>
+            <UpdateCard
+              title="HACKCON"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              date="05/09/2023"
+            ></UpdateCard>
+            <UpdateCard
+              title="JAPAN TRIP!"
+              description="Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                            Tincidunt id aliquet risus feugiat in. Velit
+                            dignissim sodales ut eu."
+              date="05/09/2023"
+            ></UpdateCard>
           </div>
 
           <button className="button w-fit">SHOW OLDER</button>

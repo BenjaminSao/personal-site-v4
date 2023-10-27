@@ -1,7 +1,7 @@
+import SkillCard from "./components/skillCard";
 import styles from "./skills.module.scss";
-import Image from "next/image";
 
-const { skillsContainer, skillContainer, skillNumber } = styles;
+const { skillsContainer } = styles;
 
 export default function Skills() {
   return (
@@ -14,102 +14,36 @@ export default function Skills() {
         <div
           className={`${skillsContainer} grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6`}
         >
-          <div className={`${skillContainer} flex justify-between`}>
-            <div className="flex flex-col justify-between">
-              <Image
-                src={"/images/logo-react-icon.png"}
-                width={40}
-                height={40}
-                alt="React"
-              ></Image>
-              <p className="descriptionText">REACT</p>
-            </div>
-            <div className="flex items-end justify-center">
-              <div className={`${skillNumber}`}>
-                <h1>1</h1>
-              </div>
-            </div>
-          </div>
-          <div className={`${skillContainer} flex justify-between`}>
-            <div className="flex flex-col justify-between">
-              <Image
-                src={"/images/image 7.png"}
-                width={40}
-                height={40}
-                alt="React"
-              ></Image>
-              <p className="descriptionText">VUE</p>
-            </div>
-            <div className="flex items-end justify-center">
-              <div className={`${skillNumber}`}>
-                <h1>2</h1>
-              </div>
-            </div>
-          </div>
-          <div className={`${skillContainer} flex justify-between`}>
-            <div className="flex flex-col justify-between">
-              <Image
-                src={"/images/image 14.png"}
-                width={40}
-                height={40}
-                alt="React"
-              ></Image>
-              <p className="descriptionText">FIGMA</p>
-            </div>
-            <div className="flex items-end justify-center">
-              <div className={`${skillNumber}`}>
-                <h1>3</h1>
-              </div>
-            </div>
-          </div>
-          <div className={`${skillContainer} flex justify-between`}>
-            <div className="flex flex-col justify-between">
-              <Image
-                src={"/images/image 9.png"}
-                width={40}
-                height={40}
-                alt="React"
-              ></Image>
-              <p className="descriptionText">EXPRESS</p>
-            </div>
-            <div className="flex items-end justify-center">
-              <div className={`${skillNumber}`}>
-                <h1>4</h1>
-              </div>
-            </div>
-          </div>
-          <div className={`${skillContainer} flex justify-between`}>
-            <div className="flex flex-col justify-between">
-              <Image
-                src={"/images/image 14.png"}
-                width={40}
-                height={40}
-                alt="React"
-              ></Image>
-              <p className="descriptionText">FIGMA</p>
-            </div>
-            <div className="flex items-end justify-center">
-              <div className={`${skillNumber}`}>
-                <h1>5</h1>
-              </div>
-            </div>
-          </div>
-          <div className={`${skillContainer} flex justify-between`}>
-            <div className="flex flex-col justify-between">
-              <Image
-                src={"/images/logo-react-icon.png"}
-                width={40}
-                height={40}
-                alt="React"
-              ></Image>
-              <p className="descriptionText">REACT</p>
-            </div>
-            <div className="flex items-end justify-center">
-              <div className={`${skillNumber}`}>
-                <h1>6</h1>
-              </div>
-            </div>
-          </div>
+          <SkillCard
+            skill="React"
+            image="/images/logo-react-icon.png"
+            number={1}
+          ></SkillCard>
+          <SkillCard
+            skill="Vue"
+            image="/images/image 7.png"
+            number={2}
+          ></SkillCard>
+          <SkillCard
+            skill="Figma"
+            image="/images/image 14.png"
+            number={3}
+          ></SkillCard>
+          <SkillCard
+            skill="EXPRESS"
+            image="/images/image 9.png"
+            number={4}
+          ></SkillCard>
+          <SkillCard
+            skill="Figma"
+            image="/images/image 14.png"
+            number={5}
+          ></SkillCard>
+          <SkillCard
+            skill="React"
+            image="/images/logo-react-icon.png"
+            number={6}
+          ></SkillCard>
         </div>
       </div>
     </section>

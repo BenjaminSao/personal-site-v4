@@ -1,67 +1,22 @@
 .projects {
-    height: 50rem;
-    width: 100vw;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    padding: 2px;
+  height: 50rem;
+  width: 100vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 2px;
 
-    &::-webkit-scrollbar {
-        width: 0;
-        background: transparent;
-    }
-
-    .project {
-        height: 100%;
-        width: 17.5rem;
-        position: relative;
-        flex-shrink: 0;
-
-        outline: #3b4043 1px solid;
-        transition: outline z-index 0.3s;
-
-        margin-top: 1px;
-        margin-left: 1px;
-
-        > .projectImageOverlay {
-            height: 80%;
-            width: 100%;
-
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            background: rgba(0, 0, 0, 0.75);
-
-            transition: opacity 0.3s;
-        }
-
-        p {
-            transition: color 0.3s;
-        }
-
-        &:hover {
-            > .projectImageOverlay {
-                opacity: 0.2;
-            }
-
-            outline: #f5f5f5 1px solid;
-            z-index: 99;
-        }
-
-        > .projectImage {
-            height: 80%;
-            object-fit: cover;
-            object-position: center;
-        }
-    }
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
 }
 
 @media (min-width: 2000px) {
-    .projectsSection {
-        align-items: center;
-    }
+  .projectsSection {
+    align-items: center;
+  }
 
-    .projects {
-        width: 100rem;
-    }
+  .projects {
+    width: 100rem;
+  }
 }
