@@ -108,8 +108,9 @@ a {
         padding: 0.75rem 1.5rem 0.5rem 1.5rem;
         background-color: transparent;
         border: #3b4043 solid 1px;
+        border-radius: 0;
 
-        font-size: 1.5rem;
+        font-size: 1.125rem;
         font-family: rota;
         letter-spacing: 1.5px;
 
@@ -118,6 +119,10 @@ a {
 
         &:focus {
             outline: none;
+
+            + .inputLabel {
+                transform: translateY(5px);
+            }
         }
     }
 
@@ -127,9 +132,19 @@ a {
         letter-spacing: 3.6px;
 
         position: absolute;
-        bottom: -0.75rem;
+        bottom: -0.5rem;
         left: 2rem;
+
+        transition: transform 0.3s;
     }
+}
+
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 textarea::-webkit-scrollbar {

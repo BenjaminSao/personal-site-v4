@@ -65,7 +65,7 @@ export default function Contact() {
                 </div>
 
                 <div className="inputContainer mb-8">
-                  <textarea className="textarea" rows={5} />
+                  <textarea className="textarea" rows={8} />
                   <label className="inputLabel">BODY</label>
                 </div>
 

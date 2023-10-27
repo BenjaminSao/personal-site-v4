@@ -1,61 +1,61 @@
 .heroSectionContainer {
-  border: 1px #3b4043 solid;
+    border: 1px #3b4043 solid;
 
-  .leftContainer {
-    .nameContainer {
-      background-color: #f5f5f5;
-      padding: 10rem 3rem;
-      color: #3b4043;
+    .leftContainer {
+        .nameContainer {
+            background-color: #f5f5f5;
+            padding: 10rem 3rem;
+            color: #3b4043;
 
-      .title {
-        font-size: 3rem;
-        line-height: normal;
-        font-weight: 700;
-      }
+            .title {
+                font-size: 3rem;
+                line-height: normal;
+                font-weight: 700;
+            }
+        }
+
+        .descriptionContainer {
+            background-color: #3b4043;
+            padding: 3rem;
+        }
+
+        .updateContainer {
+            background-color: #3b4043;
+            padding: 3rem;
+        }
     }
 
-    .descriptionContainer {
-      background-color: #3b4043;
-      padding: 3rem;
+    .imageContainer {
+        width: 100%;
+        height: 30.5rem;
+
+        background: url("/images/IMG_2440.JPG");
+        background-position: center center;
+        background-size: cover;
+
+        filter: contrast(80%);
+
+        transition: filter 0.3s;
+
+        padding: 2rem;
     }
 
-    .updateContainer {
-      background-color: #3b4043;
-      padding: 3rem;
+    .imageContainer:hover {
+        filter: contrast(100%);
     }
-  }
 
-  .imageContainer {
-    width: 100%;
-    height: 36rem;
-
-    background: url("/images/IMG_2440.JPG");
-    background-position: center center;
-    background-size: cover;
-
-    filter: contrast(80%);
-
-    transition: filter 0.3s;
-
-    padding: 2rem;
-  }
-
-  .imageContainer:hover {
-    filter: contrast(100%);
-  }
-
-  .socialsContainer {
-    background-color: #3b4043;
-    padding: 3rem;
-  }
+    .socialsContainer {
+        background-color: #3b4043;
+        padding: 3rem;
+    }
 }
 
 @media (min-width: 768px) {
-  .title {
-    font-size: 75px;
-  }
+    .title {
+        font-size: 75px;
+    }
 
-  .nameContainer {
-    padding: 5rem 3rem !important;
-  }
+    .nameContainer {
+        padding: 5rem 3rem !important;
+    }
 }

@@ -1,26 +1,70 @@
 .largeContainer {
-  padding: 3rem;
-  background-color: #f5f5f5;
-  color: #222425;
-  height: 36rem;
+    padding: 3rem;
+    background-color: #f5f5f5;
+    color: #222425;
+    min-height: 40rem;
 
-  margin: 0 1rem;
+    margin: 0 1rem;
+
+    transition: transform 0.3s;
 }
 
 .smallContainer {
-  padding: 3rem;
-  background-color: #3b4043;
-  height: 36rem;
+    padding: 3rem;
+    background-color: #3b4043;
+    min-height: 40rem;
 
-  margin: 0 1rem;
+    margin: 0 1rem;
+
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: translateX(-10px) translateY(-10px);
+    }
+}
+
+.beforeExpTitle,
+.afterExpTitle {
+    display: inline-block;
+}
+
+.beforeExpTitle {
+    opacity: 1;
+    visibility: visible;
+}
+
+.afterExpTitle {
+    display: none;
+}
+
+.afterExpDescription {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.largeContainer:hover,
+.smallContainer:hover {
+    transform: translateX(-10px) translateY(-10px);
+
+    .beforeExpTitle {
+        display: none;
+    }
+
+    .afterExpTitle {
+        display: inline-block;
+    }
+
+    .afterExpDescription {
+        opacity: 1;
+    }
 }
 
 @media (min-width: 768px) {
-  .smallContainer {
-    margin: 0;
-  }
+    .smallContainer {
+        margin: 0;
+    }
 
-  .largeContainer {
-    margin: 0;
-  }
+    .largeContainer {
+        margin: 0;
+    }
 }
