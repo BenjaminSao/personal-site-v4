@@ -1,3 +1,4 @@
+import HeroImageGallery from "./components/heroImageGallery/heroImageGallery";
 import styles from "./hero.module.scss";
 
 import FeatherIcon from "feather-icons-react";
@@ -10,7 +11,6 @@ const {
   nameContainerSubtitle,
   title,
   leftContainer,
-  imageContainer,
   socialsContainer,
 } = styles;
 
@@ -58,18 +58,7 @@ export default function Hero() {
               </div>
             </div>
             <div className="w-full">
-              <div data-aos="fade-up" data-aos-delay="150">
-                <div
-                  className={`${imageContainer} flex items-end justify-between`}
-                >
-                  <p className="descriptionText">ME</p>
-                  <div className={`flex gap-2`}>
-                    <div className="circle"></div>
-                    <div className="circle"></div>
-                    <div className="circle"></div>
-                  </div>
-                </div>
-              </div>
+              <HeroImageGallery></HeroImageGallery>
               <div
                 className={`${socialsContainer} mt-4`}
                 data-aos="fade-up"

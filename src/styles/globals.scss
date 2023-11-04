@@ -8,162 +8,222 @@ $grey: #3b4043;
 $white: #f5f5f5;
 
 @font-face {
-  font-family: "fungis";
-  src: url("/assets/fonts/fungis/FUNGIS-Regular\ 400.otf") format("opentype");
+    font-family: "fungis";
+    src: url("/assets/fonts/fungis/FUNGIS-Regular\ 400.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "fungis";
-  font-weight: bold;
-  src: url("/assets/fonts/fungis/FUNGIS-Bold\ 700.otf") format("opentype");
+    font-family: "fungis";
+    font-weight: bold;
+    src: url("/assets/fonts/fungis/FUNGIS-Bold\ 700.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "fungis";
-  font-weight: 800;
-  src: url("/assets/fonts/fungis/FUNGIS-Heavy\ 700.otf") format("opentype");
+    font-family: "fungis";
+    font-weight: 800;
+    src: url("/assets/fonts/fungis/FUNGIS-Heavy\ 700.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "rota";
-  src: url("/assets/fonts/rota/Rota-Light.otf") format("opentype");
+    font-family: "rota";
+    src: url("/assets/fonts/rota/Rota-Light.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "rota";
-  font-weight: bold;
-  src: url("/assets/fonts/rota/Rota-Bold.otf") format("opentype");
+    font-family: "rota";
+    font-weight: bold;
+    src: url("/assets/fonts/rota/Rota-Bold.otf") format("opentype");
 }
 
 h1 {
-  font-family: "fungis";
-  line-height: normal;
+    font-family: "fungis";
+    line-height: normal;
 }
 
 h2 {
-  font-family: "fungis";
-  font-size: 32px;
-  font-weight: normal;
-  letter-spacing: 1.6px;
+    font-family: "fungis";
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 1.6px;
 }
 
 .descriptionText {
-  font-family: "fungis";
-  font-weight: bold;
-  letter-spacing: 3.6px;
-  font-size: 12px;
+    font-family: "fungis";
+    font-weight: bold;
+    letter-spacing: 3.6px;
+    font-size: 12px;
 }
 
 p {
-  font-size: 18px;
-  line-height: normal;
-  font-weight: 400;
-  letter-spacing: 1.5px;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 400;
+    letter-spacing: 1.5px;
 }
 
 body {
-  overflow-x: hidden;
-  margin: 0;
-  background-color: $black;
-  color: $white;
-  font-family: "rota", Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: $black;
+    color: $white;
+    font-family: "rota", Arial, Helvetica, sans-serif;
 }
 
 .circle {
-  width: 0.75rem;
-  height: 0.75rem;
-  background-color: #f5f5f5;
-  border-radius: 50%;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+
+    &.isSelected {
+        background-color: #222425;
+    }
+}
+
+.screen {
+    position: fixed;
+    z-index: 99;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: #222425;
+    opacity: 0.75;
+}
+
+.loader {
+    width: 2rem;
+    height: 2rem;
+
+    border: 2px $white solid;
+
+    animation: spin 2.25s linear infinite;
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        10% {
+            transform: rotate(0deg);
+        }
+        20% {
+            transform: rotate(90deg);
+        }
+        35% {
+            transform: rotate(90deg);
+        }
+        45% {
+            transform: rotate(180deg);
+        }
+        60% {
+            transform: rotate(180deg);
+        }
+        75% {
+            transform: rotate(270deg);
+        }
+        85% {
+            transform: rotate(270deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
 }
 
 .circle:hover {
-  background-color: #222425;
+    background-color: #222425;
 }
 
 .feather {
-  stroke: #f5f5f5;
-  stroke-width: 1.5px;
+    stroke: #f5f5f5;
+    stroke-width: 1.5px;
 
-  transition: stroke 0.2s;
+    transition: stroke 0.2s;
 }
 
 a .feather:hover {
-  stroke: #3b4043;
+    stroke: #3b4043;
 }
 
 a {
-  font-size: 18px;
-  line-height: normal;
-  font-weight: 400;
-  letter-spacing: 1.5px;
-  text-decoration: underline;
-  cursor: pointer;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .inputContainer {
-  position: relative;
+    position: relative;
 
-  > .input,
-  > .textarea {
-    width: 100%;
-    padding: 0.75rem 1.5rem 0.5rem 1.5rem;
-    background-color: transparent;
-    border: #3b4043 solid 1px;
-    border-radius: 0;
+    > .input,
+    > .textarea {
+        width: 100%;
+        padding: 0.75rem 1.5rem 0.5rem 1.5rem;
+        background-color: transparent;
+        border: #3b4043 solid 1px;
+        border-radius: 0;
 
-    font-size: 1.125rem;
-    font-family: rota;
-    letter-spacing: 1.5px;
+        font-size: 1.125rem;
+        font-family: rota;
+        letter-spacing: 1.5px;
 
-    resize: none;
-    vertical-align: top;
+        resize: none;
+        vertical-align: top;
 
-    &:focus {
-      outline: none;
+        &:focus {
+            outline: none;
 
-      + .inputLabel {
-        transform: translateY(5px);
-      }
+            + .inputLabel {
+                transform: translateY(5px);
+            }
+        }
     }
-  }
 
-  > .inputLabel {
-    font-size: 0.75rem;
-    font-family: "fungis";
-    letter-spacing: 3.6px;
+    > .inputLabel {
+        font-size: 0.75rem;
+        font-family: "fungis";
+        letter-spacing: 3.6px;
 
-    position: absolute;
-    bottom: -0.5rem;
-    left: 2rem;
+        position: absolute;
+        bottom: -0.5rem;
+        left: 2rem;
 
-    transition: transform 0.3s;
-  }
+        transition: transform 0.3s;
+    }
 }
 
 textarea,
 input[type="text"],
 input[type="button"],
 input[type="submit"] {
-  -webkit-appearance: none;
-  border-radius: 0;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 textarea::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
+    width: 0;
+    background: transparent;
 }
 
 .button {
-  padding: 1rem 2rem;
-  border: #3b4043 solid 1px;
+    padding: 1rem 2rem;
+    border: #3b4043 solid 1px;
 
-  font-size: 0.75rem;
-  font-family: "fungis";
-  letter-spacing: 3.6px;
+    font-size: 0.75rem;
+    font-family: "fungis";
+    letter-spacing: 3.6px;
 
-  transition: background-color 0.2s;
+    transition: background-color 0.2s;
 
-  &:hover {
-    background-color: $grey;
-  }
+    &:hover {
+        background-color: $grey;
+    }
 }
