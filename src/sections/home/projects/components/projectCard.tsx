@@ -11,7 +11,6 @@ export interface ProjectCardProps {
     tagline: string;
     backgroundColor?: string;
     onClick: () => void;
-    key: number;
 }
 
 export default function ProjectCard(props: ProjectCardProps) {
@@ -21,7 +20,6 @@ export default function ProjectCard(props: ProjectCardProps) {
             data-aos="fade-up"
             data-aos-delay={50 * props.id}
             onClick={() => props.onClick()}
-            key={props.key}
         >
             {props.image ? (
                 <Image

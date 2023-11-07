@@ -27,6 +27,7 @@ export default function Updates() {
                     title={update.title.toUpperCase()}
                     description={update.description}
                     date={update.date}
+                    key={index}
                   ></UpdateCard>
                 );
               })}
