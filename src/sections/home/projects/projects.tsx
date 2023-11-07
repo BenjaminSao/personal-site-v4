@@ -90,7 +90,7 @@ export default function Projects() {
             <div className="flex gap-2 mt-2">
               {project.tools.map((tool, index) => {
                 return (
-                  <div className={`${toolContainer} font-bold`} key={index}>
+                  <div className={`${toolContainer} font-bold`}>
                     {tool}
                   </div>
                 );
