@@ -1,15 +1,15 @@
 export const imagesData: readonly image[] = [
   {
-    imagePath: "/images/galleryGalleryImages/IMG_2440.JPG",
+    imagePath: "/images/galleryGalleryImages/htv8.jpg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut diam quam.",
-    title: "HACKCON x HTV 2023",
+      "The return of Hike the Valley, at night! Was very spooky and fun :)",
+    title: "HTV 8",
   },
   {
-    imagePath: "/images/galleryGalleryImages/IMG_3230.png",
+    imagePath: "/images/galleryGalleryImages/IMG_2440.JPG",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut diam quam.",
-    title: "HACKCON x HTV 2023",
+      "HTV 7 - Hike the Valley ",
+    title: "HTV 7",
   },
 ];
 

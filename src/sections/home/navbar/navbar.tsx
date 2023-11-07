@@ -53,7 +53,7 @@ export default function Navbar() {
           </div>
 
           <div className="w-full flex items-center justify-end xl:hidden">
-            {!isFullMenuOpen && (
+            {isFullMenuOpen && (
               <div className="screen flex flex-col">
                 <div
                   className={`${closeMenu} cursor-pointer`}

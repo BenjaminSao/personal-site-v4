@@ -65,20 +65,14 @@ export default function Hero() {
                 <p className="descriptionText">CONNECT</p>
 
                 <div className="flex items-center gap-8 mt-4">
-                  <a href="">
+                  <a href="https://www.linkedin.com/in/bensaobuppha/">
                     <FeatherIcon icon="linkedin" size={30}></FeatherIcon>
                   </a>
-                  <a href="">
+                  <a href="https://github.com/BenjaminSao">
                     <FeatherIcon icon="github" size={30}></FeatherIcon>
                   </a>
-                  <a href="">
+                  <a href="https://www.instagram.com/">
                     <FeatherIcon icon="instagram" size={30}></FeatherIcon>
-                  </a>
-                  <a href="">
-                    <FeatherIcon icon="facebook" size={30}></FeatherIcon>
-                  </a>
-                  <a href="">
-                    <FeatherIcon icon="search" size={30}></FeatherIcon>
                   </a>
                 </div>
               </div>

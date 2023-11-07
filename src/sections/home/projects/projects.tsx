@@ -42,7 +42,7 @@ export default function Projects() {
             id="projects"
         >
             <div className="container mx-auto">
-                <h2 className="pl-4">PROJECT</h2>
+                <h2 className="pl-4">PROJECTS</h2>
             </div>
 
             <div className={`${projects} mt-6 flex`}>
