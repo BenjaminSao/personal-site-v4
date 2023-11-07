@@ -1,0 +1,42 @@
+.projects {
+  height: 50rem;
+  width: 100vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 2px;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+}
+
+.projectDescriptionContainer {
+  opacity: 0;
+
+  transition: opacity 0.5s;
+}
+
+.shown {
+  opacity: 1;
+}
+
+@media (min-width: 2000px) {
+  .projectsSection {
+    align-items: center;
+  }
+
+  .projects {
+    width: 100rem;
+  }
+}
+
+.toolContainer {
+  border: 1px solid #3b4043;
+  padding: 0.25rem 0.5rem;
+}
+
+.projectDescription {
+  border: solid 1px #3b4043;
+  padding: 4rem;
+}

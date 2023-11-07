@@ -1,0 +1,42 @@
+.heroSectionContainer {
+  border: 1px #3b4043 solid;
+
+  .leftContainer {
+    .nameContainer {
+      background-color: #f5f5f5;
+      padding: 10rem 3rem;
+      color: #3b4043;
+
+      .title {
+        font-size: 3rem;
+        line-height: normal;
+        font-weight: 700;
+      }
+    }
+
+    .descriptionContainer {
+      background-color: #3b4043;
+      padding: 3rem;
+    }
+
+    .updateContainer {
+      background-color: #3b4043;
+      padding: 3rem;
+    }
+  }
+
+  .socialsContainer {
+    border: #3b4043 1px solid;
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 75px;
+  }
+
+  .nameContainer {
+    padding: 5rem 3rem !important;
+  }
+}
