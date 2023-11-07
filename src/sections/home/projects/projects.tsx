@@ -87,7 +87,7 @@ export default function Projects() {
             <p className="mt-2">{project.projectType}</p>
 
             <p className="font-bold mt-4">Tools</p>
-            <div className="flex gap-2 mt-2">
+            <div className="flex flex-wrap gap-2 mt-2">
               {project.tools.map((tool, index) => {
                 return (
                   <div className={`${toolContainer} font-bold`} key={index}>
