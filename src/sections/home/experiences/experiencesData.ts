@@ -4,15 +4,6 @@ export const experiencesData: Experience[] = [
   {
     cardSize: cardSize.L,
     category: "WORK",
-    description:
-      "Started a Teaching Assistant Role @ the University of Toronto for a third-year computer science course (CSCC09 - Programming on the Web) on the mastery of building web applications using current day technologies and frameworks.",
-    location: "University of Toronto",
-    duration: "2019-Present",
-    role: "TEACHING ASSISTANT",
-  },
-  {
-    cardSize: cardSize.L,
-    category: "WORK",
     description: `Started an Internship (4-month) position @ Oracle NetSuite as a Software Developer Co-op for the ERP Cash Management Team. Worked creating core functionality within the NetSuite enterprise B2B application, debugging customer accounts in production, and more.`,
     location: "Oracle",
     duration: "2022 (4 Months)",
@@ -53,6 +44,15 @@ export const experiencesData: Experience[] = [
     location: "University of Toronto",
     duration: "2019-Present",
     role: "STATS (ML)",
+  },
+  {
+    cardSize: cardSize.L,
+    category: "WORK",
+    description:
+      "Started a Teaching Assistant Role @ the University of Toronto for a third-year computer science course (CSCC09 - Programming on the Web) on the mastery of building web applications using current day technologies and frameworks.",
+    location: "University of Toronto",
+    duration: "2023-Present",
+    role: "TEACHING ASSISTANT",
   },
 ];
 
