@@ -11,6 +11,7 @@
   .navbarItem {
     padding: 1.5rem;
     width: 125px;
+    text-decoration: none;
 
     > p {
       font-size: 14px;
@@ -18,10 +19,7 @@
       text-align: center;
     }
 
-    &.isSelected {
-      font-weight: bold;
-      background-color: #3b4043;
-    }
+    transition: background-color 0.3s;
   }
 
   .navbarItem:hover {
@@ -31,4 +29,24 @@
       font-weight: 700;
     }
   }
+}
+
+.navbarMenuItem {
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+
+  text-decoration: none;
+
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #3b4043;
+  }
+}
+
+.closeMenu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }

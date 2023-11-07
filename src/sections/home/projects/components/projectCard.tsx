@@ -9,25 +9,31 @@ export interface ProjectCardProps {
   image?: string;
   name: string;
   tagline: string;
+  backgroundColor?: string;
+  onClick: () => void;
 }
 
 export default function ProjectCard(props: ProjectCardProps) {
   return (
     <div
-      className={`${project}`}
+      className={`${project} cursor-pointer`}
       data-aos="fade-up"
       data-aos-delay={50 * props.id}
+      onClick={() => props.onClick()}
     >
       {props.image ? (
         <Image
           width={4320}
           height={4320}
           className={`${projectImage}`}
-          src="/images/Thumnail.png"
+          src={props.image}
           alt=""
         />
       ) : (
-        <div className={`${projectImage}`}></div>
+        <div
+          className={`${projectImage}`}
+          style={{ background: props.backgroundColor }}
+        ></div>
       )}
 
       <div className={`${projectImageOverlay}`}></div>

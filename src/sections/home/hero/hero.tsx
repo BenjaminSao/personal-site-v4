@@ -14,9 +14,11 @@ const {
   socialsContainer,
 } = styles;
 
+import { updates } from "../updates/updatesData";
+
 export default function Hero() {
   return (
-    <section className="section">
+    <section className="section" id="home">
       <div className="container mx-auto">
         <div className={`${heroSectionContainer} p-4`}>
           <div className="flex flex-col lg:flex-row gap-4">
@@ -49,11 +51,7 @@ export default function Hero() {
                   data-aos-delay="100"
                 >
                   <p className="descriptionText">RECENT UPDATE</p>
-                  <p className="mt-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
+                  <p className="mt-4">{updates[0].description}</p>
                 </div>
               </div>
             </div>

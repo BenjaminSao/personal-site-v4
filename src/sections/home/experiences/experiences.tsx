@@ -2,7 +2,7 @@ import ExperienceCard, { cardSize } from "./components/experienceCard";
 
 export default function Experiences() {
   return (
-    <section className="section mt-48">
+    <section className="section mt-48" id="experience">
       <div className="container mx-auto">
         <h2 className="pl-4">MY EXPERIENCES</h2>
 

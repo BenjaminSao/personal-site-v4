@@ -5,7 +5,7 @@ const { skillsContainer } = styles;
 
 export default function Skills() {
   return (
-    <section className="section mt-48">
+    <section className="section mt-48" id="skills">
       <div className="container mx-auto">
         <h2 className="pl-4">
           <span className="font-extrabold">FEATURED</span> SKILLS
