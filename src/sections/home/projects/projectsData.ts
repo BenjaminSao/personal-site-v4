@@ -91,7 +91,15 @@ export const projectsData: Project[] = [
     projectType: ProjectType.Hackathon,
     githubLink: "https://github.com/BenjaminSao/DormBuddies",
     link: "https://devpost.com/software/dormbuddy",
-    tools: ["JavaScript", "HTML/CSS", "Twilio", "Firebase", "Vue.js", "Node.js", "C#"],
+    tools: [
+      "JavaScript",
+      "HTML/CSS",
+      "Twilio",
+      "Firebase",
+      "Vue.js",
+      "Node.js",
+      "C#",
+    ],
   },
   {
     projectName: "AnimeTaro",

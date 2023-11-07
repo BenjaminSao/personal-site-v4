@@ -39,10 +39,13 @@ export default function Hero() {
                 >
                   <p className="descriptionText">DESCRIPTION</p>
                   <p className="mt-4">
-                    I'm a Full-Stack Developer, who is a 4th year student
-                    studying at the University of Toronto specializing in
-                    Machine Learning and Data Mining and a Software Developer at
-                    Oracle and Vice President at HTV Exec Team.
+                    I'm a <strong>Full-Stack Developer</strong>, who is a 4th
+                    year student studying at the{" "}
+                    <strong>University of Toronto</strong> specializing in{" "}
+                    <strong>Machine Learning and Data Mining</strong> and a
+                    previous <strong>Software Developer</strong>
+                    at <strong>Oracle</strong> and{" "}
+                    <strong>Vice President</strong> at Hack the Valley.
                   </p>
                 </div>
                 <div
@@ -71,8 +74,11 @@ export default function Hero() {
                   <a href="https://github.com/BenjaminSao">
                     <FeatherIcon icon="github" size={30}></FeatherIcon>
                   </a>
-                  <a href="https://www.instagram.com/">
+                  <a href="https://www.instagram.com/saobupphaben/">
                     <FeatherIcon icon="instagram" size={30}></FeatherIcon>
+                  </a>
+                  <a href="https://www.facebook.com/saobupphaben/">
+                    <FeatherIcon icon="facebook" size={30}></FeatherIcon>
                   </a>
                 </div>
               </div>

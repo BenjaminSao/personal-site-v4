@@ -7,8 +7,7 @@ export const imagesData: readonly image[] = [
   },
   {
     imagePath: "/images/galleryGalleryImages/IMG_2440.JPG",
-    description:
-      "HTV 7 - Hike the Valley ",
+    description: "HTV 7 - Hike the Valley ",
     title: "HTV 7",
   },
 ];
