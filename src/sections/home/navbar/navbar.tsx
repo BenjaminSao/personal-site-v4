@@ -52,7 +52,7 @@ export default function Navbar() {
             </a>
           </div>
 
-          <div className="w-full flex items-center justify-end xl:hidden">
+          <div className="w-full flex items-center justify-end xl:hidden mr-4">
             {isFullMenuOpen && (
               <div className="screen flex flex-col">
                 <div
